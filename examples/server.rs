@@ -1,6 +1,6 @@
 use std::sync::{Arc, RwLock};
 
-use bluedroid::{
+use smurfs::{
     gatt_server::{Characteristic, Profile, Service, GLOBAL_GATT_SERVER},
     utilities::{AttributePermissions, CharacteristicProperties},
     uuid128,

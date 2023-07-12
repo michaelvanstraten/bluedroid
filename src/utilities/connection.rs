@@ -4,7 +4,7 @@ use esp_idf_sys::{
 };
 
 #[derive(Debug, Copy, Clone)]
-pub(crate) struct Connection {
+pub struct Connection {
     pub(crate) id: u16,
     #[cfg(esp_idf_version_major = "4")]
     pub(crate) is_slave: bool,

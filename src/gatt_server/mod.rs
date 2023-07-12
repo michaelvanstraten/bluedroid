@@ -101,7 +101,8 @@ pub struct GattServer {
     scan_response_data: esp_ble_adv_data_t,
     device_name: String,
     advertisement_configured: bool,
-    active_connections: HashSet<Connection>,
+    /// A set of active connections
+    pub active_connections: HashSet<Connection>,
     custom_server_callbacks: CustomServerCallbacks, // Custom callbacks for server events.
 }
 

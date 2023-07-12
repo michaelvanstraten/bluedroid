@@ -1,6 +1,6 @@
 use std::sync::{Arc, RwLock};
 
-use bluedroid::{
+use smurfs::{
     gatt_server::{Characteristic, Profile, Service, GLOBAL_GATT_SERVER},
     utilities::{AttributePermissions, BleUuid, CharacteristicProperties},
 };
@@ -107,7 +107,7 @@ fn main() {
         .unwrap()
         .profile(profile)
         .device_name("BLUEDROID-DUT")
-        .appearance(bluedroid::utilities::Appearance::GenericUnknown)
+        .appearance(smurfs::utilities::Appearance::GenericUnknown)
         .advertise_service(&advertised_service)
         .start();
 
